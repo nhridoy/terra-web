@@ -1,11 +1,41 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import LandingDemo from '../components/landing/LandingDemo';
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Terra — Web Presence">
+	<main class="flex min-h-svh flex-col items-center px-6 py-20">
+		<section class="flex w-full max-w-2xl flex-col items-center gap-6 text-center">
+			<span
+				class="rounded-full border border-border bg-muted/50 px-3 py-1 text-xs font-medium text-muted-foreground"
+			>
+				Open-source · Self-hosted · Early preview
+			</span>
+			<h1 class="font-heading text-4xl font-bold tracking-tight text-balance sm:text-6xl">
+				TermVault is taking shape
+			</h1>
+			<p class="max-w-xl text-pretty text-base text-muted-foreground sm:text-lg">
+				A local-first, end-to-end encrypted SSH client. Terra is built with a Rust
+				core, a Go backend, and now a web presence running Astro, React, and
+				Tailwind CSS.
+			</p>
+			<div class="flex flex-wrap items-center justify-center gap-3">
+				<a
+					href="https://github.com/nhridoy/terra"
+					class="inline-flex h-9 items-center justify-center rounded-lg bg-primary px-4 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/80"
+				>
+					View source
+				</a>
+				<a
+					href="#"
+					class="inline-flex h-9 items-center justify-center rounded-lg border border-border bg-background px-4 text-sm font-medium text-foreground transition-colors hover:bg-muted"
+				>
+					Documentation
+				</a>
+			</div>
+		</section>
+		<div class="mt-12 w-full max-w-2xl">
+			<LandingDemo client:visible />
+		</div>
+	</main>
 </Layout>
