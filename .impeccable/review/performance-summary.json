@@ -1,0 +1,19 @@
+{
+  "url": "http://127.0.0.1:4322",
+  "mode": "Lighthouse mobile simulation against local production build",
+  "scores": {
+    "performance": 92,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100
+  },
+  "largestContentfulPaintMs": 1807.9284,
+  "cumulativeLayoutShift": 0.000792146789401379,
+  "totalBlockingTimeMs": 337.07159999999976,
+  "menuAccessibleNameCheck": 1,
+  "interactionProbe": {
+    "cpuSlowdown": 4,
+    "maximumObservedEventDurationMs": 72,
+    "fieldINP": "Not measured; this is a local interaction probe, not field Core Web Vitals."
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-20T14:45:06.714303+00:00",
+  "title": "Design System: Terra",
+  "extensions": {
+    "colorMeta": {
+      "mint": {
+        "role": "primary",
+        "displayName": "Mint"
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Charcoal canvas"
+      },
+      "raised": {
+        "role": "neutral",
+        "displayName": "Raised charcoal"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Hero display",
+        "purpose": "Two-line hero headline."
+      },
+      "body": {
+        "displayName": "Section introduction",
+        "purpose": "Standard section introduction paragraphs."
+      },
+      "terminal": {
+        "displayName": "Terminal output",
+        "purpose": "Local demo output only."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "state-transition",
+        "value": "background-color 160ms ease, transform 160ms ease",
+        "purpose": "Buttons and host rows only when prefers-reduced-motion is no-preference."
+      },
+      {
+        "name": "press",
+        "value": "scale(0.98)",
+        "purpose": "Active buttons and host rows with motion allowed."
+      },
+      {
+        "name": "link-arrow",
+        "value": "translateX(3px)",
+        "purpose": "Text-link hover with motion allowed."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide-min",
+        "value": "1440px"
+      },
+      {
+        "name": "compact-max",
+        "value": "1100px"
+      },
+      {
+        "name": "mobile-max",
+        "value": "767px"
+      },
+      {
+        "name": "narrow-max",
+        "value": "360px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Mint primary conversion action.",
+      "html": "<a class=\"ds-button\" href=\"#get-terra\">Get Terra</a>",
+      "css": ".ds-button{display:inline-flex;align-items:center;justify-content:center;gap:13px;min-height:48px;padding:0 22px;border:1px solid transparent;border-radius:var(--radius-control);font-family:\"Geist Variable\",sans-serif;font-size:14px;font-weight:550;white-space:nowrap;cursor:pointer;text-decoration:none}.ds-button:focus-visible{outline:2px solid var(--mint);outline-offset:5px}@media(prefers-reduced-motion:no-preference){.ds-button{transition:background-color 160ms ease,transform 160ms ease}.ds-button:active{transform:scale(.98)}}.ds-button{background:var(--mint);color:var(--mint-ink)}.ds-button:hover{background:#bce8cd}"
+    },
+    {
+      "name": "Outline button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Secondary source action.",
+      "html": "<a class=\"ds-button\" href=\"https://github.com/nhridoy/terra\">View source</a>",
+      "css": ".ds-button{display:inline-flex;align-items:center;justify-content:center;gap:13px;min-height:48px;padding:0 22px;border:1px solid transparent;border-radius:var(--radius-control);font-family:\"Geist Variable\",sans-serif;font-size:14px;font-weight:550;white-space:nowrap;cursor:pointer;text-decoration:none}.ds-button:focus-visible{outline:2px solid var(--mint);outline-offset:5px}@media(prefers-reduced-motion:no-preference){.ds-button{transition:background-color 160ms ease,transform 160ms ease}.ds-button:active{transform:scale(.98)}}.ds-button{background:transparent;border-color:#607168;color:var(--ink)}.ds-button:hover{background:var(--raised)}"
+    },
+    {
+      "name": "Host search",
+      "kind": "input",
+      "refersTo": "host-search",
+      "description": "Compact bordered demo search.",
+      "html": "<label class=\"ds-search\"><input aria-label=\"Search hosts\" placeholder=\"Search hosts\" /></label>",
+      "css": ".ds-search{display:flex;padding:0 10px;border:1px solid #56625b;border-radius:6px;color:var(--muted)}.ds-search input{width:100%;min-width:0;height:38px;background:transparent;color:var(--ink);border:0;font-family:\"Geist Variable\",sans-serif;font-size:12px;caret-color:var(--mint)}.ds-search input::placeholder{color:var(--muted);opacity:1}.ds-search input:focus-visible{outline:2px solid var(--mint);outline-offset:5px}"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "description": "Quiet desktop navigation.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Main navigation\"><a href=\"#workspace\">Product</a><a href=\"#security\">Security</a><a href=\"#deployment\">Self-hosting</a></nav>",
+      "css": ".ds-nav{display:flex;gap:30px;align-items:center;font-family:\"Geist Variable\",sans-serif}.ds-nav a{display:inline-flex;align-items:center;min-height:44px;font-size:13px;color:var(--muted);text-decoration:none}.ds-nav a:hover{color:var(--ink)}.ds-nav a:focus-visible{outline:2px solid var(--mint);outline-offset:5px}"
+    },
+    {
+      "name": "Feature container",
+      "kind": "card",
+      "refersTo": "feature-hosts",
+      "description": "Tonal panel for a focused product benefit.",
+      "html": "<article class=\"ds-card\"><h3>A place for every host.</h3><p>Keep connection details organized.</p></article>",
+      "css": ".ds-card{padding:32px 34px;border-radius:var(--radius-panel);background:#1c2b23;font-family:\"Geist Variable\",sans-serif;color:var(--ink)}.ds-card h3{margin:0;font-size:23px;font-weight:500;line-height:1.25;letter-spacing:-.03em}.ds-card p{margin:14px 0 0;max-width:310px;font-size:14px;line-height:1.7;color:var(--muted)}"
+    },
+    {
+      "name": "Selected host",
+      "kind": "custom",
+      "refersTo": "host-selected",
+      "description": "Selected compact host row in the local workspace demo.",
+      "html": "<button class=\"ds-host\" aria-pressed=\"true\"><strong>Production</strong><small>Selected host</small></button>",
+      "css": ".ds-host{display:block;width:100%;padding:11px 12px;border:1px solid #425b4c;border-radius:6px;background:#26372d;text-align:left;color:var(--mint);font-family:\"Geist Variable\",sans-serif;cursor:pointer}.ds-host strong{display:block;font-size:12px;font-weight:450;color:var(--ink)}.ds-host small{display:block;padding-top:3px;font-size:10px}.ds-host:hover{background:#24312a}.ds-host:focus-visible{outline:2px solid var(--mint);outline-offset:5px}@media(prefers-reduced-motion:no-preference){.ds-host{transition:background-color 160ms ease,transform 160ms ease}.ds-host:active{transform:scale(.98)}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "An open-source home for your servers",
+    "overview": "Graphite hardware and a quiet developer workspace express ownership and everyday usefulness. A locked charcoal theme, restrained mint accent, self-hosted Geist, and generous spacing define the implemented Astro landing page. Design dials are 6/3/3.",
+    "keyCharacteristics": [
+      "Single locked dark theme",
+      "Asymmetric composition with clear reading order",
+      "Hover and active feedback without automatic motion",
+      "Useful density inside an explicitly labeled local demo"
+    ],
+    "rules": [
+      {
+        "name": "One theme",
+        "body": "Do not flip palette tokens between sections or follow OS light preference.",
+        "section": "colors"
+      },
+      {
+        "name": "Tonal depth",
+        "body": "Use tonal surfaces and borders; the source stylesheet has no box shadows.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do preserve the approved 6/3/3 dials and installed Astro/React scaffold.",
+      "Do use 12px panels, 8px buttons, and 6px compact demo controls.",
+      "Do maintain visible keyboard focus and native disclosures."
+    ],
+    "donts": [
+      "Do not invent cloud prices, signup URLs, testimonials, or benchmarks.",
+      "Do not use U+2013 or U+2014 punctuation.",
+      "Do not claim a context detector, seed approval, or comp approval."
+    ]
+  }
+}

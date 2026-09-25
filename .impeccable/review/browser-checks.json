@@ -1,0 +1,102 @@
+[
+  {
+    "name": "desktop",
+    "overflow": false,
+    "h1Lines": 2,
+    "subtextWords": 19,
+    "subtextLines": 3,
+    "ctaBottom": 541,
+    "viewportHeight": 900,
+    "headerHeight": 72,
+    "sections": 9,
+    "images": [
+      {
+        "loaded": true,
+        "src": "/images/terra-servers.webp"
+      },
+      {
+        "loaded": true,
+        "src": "/images/terra-transfer.webp"
+      }
+    ],
+    "dashes": false,
+    "brokenAnchors": [],
+    "interactions": "pass",
+    "consoleErrors": []
+  },
+  {
+    "name": "mobile",
+    "overflow": false,
+    "h1Lines": 2,
+    "subtextWords": 19,
+    "subtextLines": 3,
+    "ctaBottom": 377,
+    "viewportHeight": 844,
+    "headerHeight": 64,
+    "sections": 9,
+    "images": [
+      {
+        "loaded": true,
+        "src": "/images/terra-servers.webp"
+      },
+      {
+        "loaded": true,
+        "src": "/images/terra-transfer.webp"
+      }
+    ],
+    "dashes": false,
+    "brokenAnchors": [],
+    "interactions": "pass",
+    "consoleErrors": []
+  },
+  {
+    "name": "compact",
+    "overflow": false,
+    "h1Lines": 2,
+    "subtextWords": 19,
+    "subtextLines": 4,
+    "ctaBottom": 402,
+    "viewportHeight": 740,
+    "headerHeight": 64,
+    "sections": 9,
+    "images": [
+      {
+        "loaded": true,
+        "src": "/images/terra-servers.webp"
+      },
+      {
+        "loaded": true,
+        "src": "/images/terra-transfer.webp"
+      }
+    ],
+    "dashes": false,
+    "brokenAnchors": [],
+    "interactions": "pass",
+    "consoleErrors": []
+  },
+  {
+    "name": "laptop",
+    "overflow": false,
+    "h1Lines": 2,
+    "subtextWords": 19,
+    "subtextLines": 3,
+    "ctaBottom": 480,
+    "viewportHeight": 768,
+    "headerHeight": 72,
+    "sections": 9,
+    "images": [
+      {
+        "loaded": true,
+        "src": "/images/terra-servers.webp"
+      },
+      {
+        "loaded": true,
+        "src": "/images/terra-transfer.webp"
+      }
+    ],
+    "dashes": false,
+    "brokenAnchors": [],
+    "interactions": "pass",
+    "consoleErrors": []
+  }
+]
